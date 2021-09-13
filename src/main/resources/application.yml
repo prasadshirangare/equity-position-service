@@ -1,0 +1,13 @@
+server:
+  port: 9000
+spring:
+  datasource:
+    data: classpath:data/position.sql
+  profiles: default
+
+
+---
+spring:
+  profiles: test
+  datasource:
+    data: classpath:test-position.sql
